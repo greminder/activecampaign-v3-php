@@ -1,6 +1,6 @@
 <?php
 
-namespace Mediatoolkit\ActiveCampaign\Tasks;
+namespace Mediatoolkit\ActiveCampaign\TaskTypes;
 
 use Mediatoolkit\ActiveCampaign\Resource;
 
@@ -14,7 +14,7 @@ class TaskTypes extends Resource
 
     /**
      * Create a taskType
-     * @see https://developers.activecampaign.com/reference/create-task
+     * @see https://developers.activecampaign.com/reference/create-a-deal-task-type
      *
      * @param array $taskType
      * @return string
@@ -34,7 +34,7 @@ class TaskTypes extends Resource
 
     /**
      * Get task
-     * @see https://developers.activecampaign.com/reference/get-task
+     * @see https://developers.activecampaign.com/reference/retrieve-a-deal-task-type
      *
      * @param int $id
      * @return string
@@ -50,7 +50,7 @@ class TaskTypes extends Resource
 
     /**
      * Update a taskType
-     * @see https://developers.activecampaign.com/reference/update-task
+     * @see https://developers.activecampaign.com/reference/update-a-deal-task-type
      *
      * @param int $id
      * @param array $taskType
@@ -71,7 +71,7 @@ class TaskTypes extends Resource
 
     /**
      * Delete a taskType
-     * @see https://developers.activecampaign.com/reference/delete-task
+     * @see https://developers.activecampaign.com/reference/delete-a-deal-task-type
      *
      * @param int $id
      * @return string
@@ -88,7 +88,7 @@ class TaskTypes extends Resource
 
     /**
      * List all taskTypes
-     * @see https://developers.activecampaign.com/reference/list-all-tasks
+     * @see https://youraccountname.api-us1.com/api/3/dealTasktypes
      *
      * @param array $query_params
      * @param int $limit
