@@ -141,6 +141,24 @@ class Contacts extends Resource
         return $req->getBody()->getContents();
     }
 
+    
+    /**
+     * List all notes from contact
+     * @see https://developers.activecampaign.com/reference/retrieve-contact-notes
+     *
+     * @param int $id
+     * @return string
+     */
+    public function listNotes(int $id)
+    {
+        $req = $this->client
+            ->getClient()
+            ->get('/api/3/contacts/' . $id . '/notes');
+
+        return $req->getBody()->getContents();
+    }
+
+
     /**
      * Add a tag to contact
      * @see https://developers.activecampaign.com/reference#create-contact-tag
