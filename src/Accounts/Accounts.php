@@ -13,19 +13,19 @@ class Accounts extends Resource
 {
 
     /**
-     * Create an organization
-     * @see https://developers.activecampaign.com/reference#create-organization
+     * Create an account
+     * @see https://developers.activecampaign.com/reference#create-account
      *
-     * @param array $organization
+     * @param array $account
      * @return string
      */
-    public function create(array $organization)
+    public function create(array $account)
     {
         $req = $this->client
             ->getClient()
             ->post('/api/3/accounts', [
                 'json' => [
-                    'account' => $organization
+                    'account' => $account
                 ]
             ]);
 
@@ -33,8 +33,8 @@ class Accounts extends Resource
     }
 
     /**
-     * Get an organization
-     * @see https://developers.activecampaign.com/reference#get-organization
+     * Get an account
+     * @see https://developers.activecampaign.com/reference#get-account
      *
      * @param int $id
      * @return string
@@ -49,20 +49,20 @@ class Accounts extends Resource
     }
 
     /**
-     * Update an organization
-     * @see https://developers.activecampaign.com/reference#update-organization
+     * Update an account
+     * @see https://developers.activecampaign.com/reference#update-account
      *
      * @param int $id
-     * @param array $organization
+     * @param array $account
      * @return string
      */
-    public function update(int $id, array $organization)
+    public function update(int $id, array $account)
     {
         $req = $this->client
             ->getClient()
             ->put('/api/3/accounts/' . $id, [
                 'json' => [
-                    'account' => $organization
+                    'account' => $account
                 ]
             ]);
 
@@ -70,8 +70,8 @@ class Accounts extends Resource
     }
 
     /**
-     * Delete an organization
-     * @see https://developers.activecampaign.com/reference#delete-organization
+     * Delete an account
+     * @see https://developers.activecampaign.com/reference#delete-account
      *
      * @param int $id
      * @return string
